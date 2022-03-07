@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/nav_home">
+    <fragment android:id="@+id/nav_home" android:name="com.example.lolineke2.aplicacion.ui.home.unoSeleccionarTipoPista.Home"
+              android:label="fragment_home" tools:layout="@layout/fragment_main"/>
+    <fragment android:id="@+id/nav_reservas" android:name="com.example.lolineke2.aplicacion.ui.reservas.Reservas"
+              android:label="fragment_reservas" tools:layout="@layout/fragment_reservas"/>
+    <fragment android:id="@+id/nav_about" android:name="com.example.lolineke2.aplicacion.ui.about.About"
+              android:label="fragment_about" tools:layout="@layout/fragment_about"/>
+    <fragment android:id="@+id/nav_settings" android:name="com.example.lolineke2.aplicacion.ui.ajustes.Ajustes"
+              android:label="fragment_ajustes" tools:layout="@layout/fragment_ajustes"/>
+    <fragment android:id="@+id/nav_exit" android:name="com.example.lolineke2.aplicacion.ui.exit.Exit"
+              android:label="fragment_exit" tools:layout="@layout/fragment_exit"/>
+</navigation>

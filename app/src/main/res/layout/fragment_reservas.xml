@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   tools:context=".aplicacion.ui.reservas.Reservas">
+    <TextView
+            android:text="Mis reservas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_titulo_mis_reservas"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="35dp" android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp" android:textSize="24sp"
+            android:gravity="center"/>
+    <ListView
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/rv_mis_reservas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titulo_mis_reservas"
+            app:layout_constraintBottom_toTopOf="@+id/button_back_mis_reservas"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="25dp" android:layout_marginBottom="25dp"/>
+    <Button
+            android:text="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button_back_mis_reservas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_titulo_mis_reservas" android:layout_marginBottom="35dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

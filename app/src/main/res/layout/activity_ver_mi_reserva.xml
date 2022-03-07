@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".aplicacion.ui.reservas.verReservaX.VerMiReservaActivity">
+
+    <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp" tools:src="@tools:sample/avatars"
+            android:id="@+id/iv_pista_reserva_info"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="35dp" android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Pista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_pistaname_reserva_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_pista_reserva_info"
+            app:layout_constraintTop_toTopOf="@+id/iv_pista_reserva_info" android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp" android:layout_marginTop="30dp" android:textSize="24sp"/>
+    <TextView
+            android:text="Precio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_precio_reserva_info"
+            app:layout_constraintEnd_toEndOf="@+id/tv_pistaname_reserva_info"
+            app:layout_constraintStart_toStartOf="@+id/tv_pistaname_reserva_info"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pistaname_reserva_info" android:layout_marginTop="10dp"/>
+    <TextView
+            android:text="Descripcion"
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/tv_descripcion_reserva_info"
+            app:layout_constraintEnd_toEndOf="@+id/iv_pista_reserva_info"
+            app:layout_constraintStart_toStartOf="@+id/tv_precio_reserva_info"
+            app:layout_constraintBottom_toTopOf="@+id/tv_anombrede_reserva_info"
+            app:layout_constraintTop_toBottomOf="@+id/iv_pista_reserva_info" android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+    <TextView
+            android:text="Reservado a nombre de X"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_anombrede_reserva_info"
+            app:layout_constraintBottom_toTopOf="@+id/tv_dia_reserva_info"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dia_reserva_info"
+            app:layout_constraintStart_toStartOf="@+id/tv_dia_reserva_info" android:layout_marginBottom="10dp"/>
+    <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button_back_reserva_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_pistaname_reserva_info" android:layout_marginBottom="35dp"/>
+    <Button
+            android:text="Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button_delete_reserva_info"
+            app:layout_constraintBottom_toBottomOf="@+id/button_back_reserva_info"
+            app:layout_constraintEnd_toEndOf="@+id/iv_pista_reserva_info"/>
+    <TextView
+            android:text="a las X:XX horas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_hora_reserva_info"
+            app:layout_constraintBottom_toTopOf="@+id/button_back_reserva_info"
+            app:layout_constraintEnd_toEndOf="@+id/iv_pista_reserva_info"
+            app:layout_constraintStart_toStartOf="@+id/tv_precio_reserva_info" android:layout_marginBottom="35dp"/>
+    <TextView
+            android:text="el día dd/MM/yyyy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_dia_reserva_info"
+            app:layout_constraintBottom_toTopOf="@+id/tv_hora_reserva_info"
+            app:layout_constraintEnd_toEndOf="@+id/tv_hora_reserva_info"
+            app:layout_constraintStart_toStartOf="@+id/tv_hora_reserva_info" android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

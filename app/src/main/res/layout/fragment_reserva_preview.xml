@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   tools:context=".aplicacion.ui.home.seisReservaPreview.ReservaPreview">
+    <ImageView
+            android:layout_width="216dp"
+            android:layout_height="201dp" tools:src="@tools:sample/avatars" android:id="@+id/imagenPreview"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/imagenPreview" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imagenPreview" app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="25dp" android:paddingBottom="25dp" android:gravity="center"
+            android:id="@+id/linearLayout4">
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tituloPreview" android:layout_marginBottom="15dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/costePreview"
+                android:layout_marginTop="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenPreview"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5" android:gravity="center">
+        <TextView
+                android:text="Reserva a nombre de X"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/aNombreDePreview"
+                android:layout_marginBottom="35dp"/>
+        <TextView
+                android:text="El dia X"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/diaReservaPreview"
+                android:layout_marginBottom="35dp"/>
+        <TextView
+                android:text="A las X horas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/horaReservaApi"
+                android:layout_marginBottom="35dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_height="wrap_content" android:padding="25dp"
+            android:id="@+id/linearLayout5">
+        <Button
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/backPreview" android:layout_weight="1"
+                android:layout_marginEnd="15dp"/>
+        <Button
+                android:text="Completar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/aceptarPreview" android:layout_weight="1"
+                android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
